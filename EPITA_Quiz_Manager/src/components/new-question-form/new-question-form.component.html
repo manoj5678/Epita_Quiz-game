@@ -1,0 +1,72 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> EPITA QUIZ MANAGER </title>
+
+<h1 style="text-align: center;"> New Question </h1>
+
+<div>
+    <div>
+        <input type="text" id="q" name="q" placeholder="Enter your question...">
+    </div>
+    <table class="qtable">
+            <tr style="position: relative;background-color: rosybrown;">
+                <td style="width: 50px; text-align:center;">1</td>
+                <td style="padding: 10px;">
+                    <div class="radio">
+                        <label><input type="radio" id='regular' name="optradio"></label>
+                    </div>
+                </td>
+                <td style="padding: 10px;">
+                    <div>
+                        <input type="text" id="choice1" name="choice1" placeholder="1 choice" value="">
+                    </div>
+                </td>
+            </tr> 
+            <tr style="position: relative;background-color: rosybrown;">
+                <td style="width: 50px; text-align:center;">2</td>
+                <td style="padding: 10px;">
+                    <div class="radio">
+                        <label><input type="radio" id='regular' name="optradio"></label>
+                    </div>
+                </td>
+                <td style="padding: 10px;">
+                    <div>
+                        <input type="text" id="choice2" name="choice2" placeholder="2 choice" value="">
+                    </div>
+                </td>
+            </tr>
+            <tr style="position: relative;background-color: rosybrown;">
+                <td style="width: 50px; text-align:center;">3</td>
+                <td style="padding: 10px;">
+                    <div class="radio">
+                        <label><input type="radio" id='regular' name="optradio"></label>
+                    </div>
+                </td>
+                <td style="padding: 10px;">
+                    <div>
+                        <input type="text" id="choice3" name="choice3" placeholder="3 choice" value="">
+                    </div>
+                </td>
+            </tr>
+            <tr style="position: relative;background-color: rosybrown;">
+                <td style="width: 50px; text-align:center;">4</td>
+                <td style="padding: 10px;">
+                    <div class="radio">
+                        <label><input type="radio" id='regular' name="optradio"></label>
+                    </div>
+                </td>
+                <td style="padding: 10px;">
+                    <div>
+                        <input type="text" id="choice4" name="choice4" placeholder="4 choice" value="">
+                    </div>
+                </td>
+            </tr>       
+    </table>
+</div>
+
+<form>
+    <div class="container">
+        <button type="button" (click)="saveMCQQuestion()" class="save"> Save</button>
+    </div>
+</form>
+
+<!-- (click)="btnIndex($event)" -->

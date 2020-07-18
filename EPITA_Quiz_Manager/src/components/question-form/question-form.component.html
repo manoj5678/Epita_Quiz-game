@@ -1,0 +1,38 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title> EPITA QUIZ MANAGER </title>
+
+<h1 style="text-align: center;"> Edit Question </h1>
+<form>
+    <div class="container">
+        <button type="button" (click)="openNewQuestion()" class="add"> Add New Question</button>
+    </div>
+</form>
+<div>
+    <div>
+        <input type="text" id="title" name="title" value="{{ mcqquestion.question.q_title }}">
+    </div>
+    <table class="qtable">
+        <tr *ngFor="let items of mcqquestion.choices; let i = index" style="position: relative;background-color: rosybrown;">
+            <td style="width: 50px; text-align:center;">{{ i + 1 }}</td>
+            <!-- <td style="padding: 10px;">{{ items.q_title }}</td> -->
+            <td style="padding: 10px;">
+                <div class="radio">
+                    <label><input type="radio" id='regular' name="optradio"></label>
+                </div>
+            </td>
+            <td style="padding: 10px;">
+                <div>
+                    <input type="text" id="choice" name="choice" value="{{ items.mc_choice }}">
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<form>
+    <div class="container">
+        <button type="button" class="save"> Save</button>
+    </div>
+</form>
+
+<!-- (click)="btnIndex($event)" -->
